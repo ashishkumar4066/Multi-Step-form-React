@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import AppBar from "material-ui/AppBar";
 import TextField from "material-ui/TextField";
 import RaisedButton from "material-ui/RaisedButton";
 export class FormPersonalDetails extends Component {
@@ -17,7 +16,7 @@ export class FormPersonalDetails extends Component {
     return (
       <MuiThemeProvider>
         <React.Fragment>
-          <AppBar title="Enter Personal Details" />
+          <h1 style={{ color: "#00bcd4" }}>Enter Personal Details</h1>
           <TextField
             hintText="Enter Your Occupation"
             floatingLabelText="Occupation"
