@@ -9,6 +9,7 @@ import { MuiThemeProvider } from "material-ui/styles";
 import "./App.css";
 import UserForm from "./components/UserForm";
 import Search from "./pixabayApi/search/Search";
+import BreakingBad from "./breakingBad/BreakingBad";
 
 function App() {
   return (
@@ -18,8 +19,11 @@ function App() {
           <IconButton edge="start" color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6">News</Typography>
+          <Typography variant="h6">React Projects</Typography>
           <div style={{ marginLeft: "auto" }}>
+            <Link to="/" className="link" style={{ marginRight: "10px" }}>
+              Home
+            </Link>
             <Link
               to="/pixabay"
               className="link"
@@ -60,6 +64,9 @@ function App() {
           <MuiThemeProvider>
             <Search />
           </MuiThemeProvider>
+        </Route>
+        <Route path="/">
+          <BreakingBad />
         </Route>
       </Switch>
     </Router>
