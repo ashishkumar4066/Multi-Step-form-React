@@ -3,7 +3,7 @@ import React from "react";
 const CharacterItem = ({ item }) => {
   console.log(item);
   return (
-    <div className="card">
+    <div className="card" style={{ marginBottom: "20px" }}>
       <div className="card-inner">
         <div className="card-front">
           <img src={item.img} alt="" />

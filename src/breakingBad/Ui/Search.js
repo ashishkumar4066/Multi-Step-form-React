@@ -8,7 +8,7 @@ const Search = ({ getQuery }) => {
     getQuery(e.target.value);
   };
   return (
-    <section className="search">
+    <section className="search" style={{ marginTop: "20px" }}>
       <form>
         <input
           type="text"

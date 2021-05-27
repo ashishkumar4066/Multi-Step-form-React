@@ -24,13 +24,15 @@ const BreakingBad = () => {
   // Query is a dependency of useEffect which means whenever there is change in query useEffect will fire off
   // If the array is empty (i.e.- []) which mean useEffect will fire off only once
   return (
-    <header className="breaking">
-      <div className="container">
-        <Header />
-        <Search getQuery={(q) => setQuery(q)} />
-        <CharacterGrid items={items} isLoading={isLoading} />
-      </div>
-    </header>
+    <div className="background">
+      <header className="breaking">
+        <div className="container">
+          <Header />
+          <Search getQuery={(q) => setQuery(q)} />
+          <CharacterGrid items={items} isLoading={isLoading} />
+        </div>
+      </header>
+    </div>
   );
 };
 

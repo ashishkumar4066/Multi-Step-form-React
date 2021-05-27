@@ -4,7 +4,9 @@ import Logo from "../img/logo.png";
 const Header = () => {
   return (
     <div className="center">
-      <img src={Logo} alt="Bad" />
+      <div style={{ marginTop: "20px" }}>
+        <img src={Logo} alt="Bad" />
+      </div>
     </div>
   );
 };
